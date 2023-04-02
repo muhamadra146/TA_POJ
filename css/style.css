@@ -573,22 +573,20 @@ header nav ul li a.active {
 }
 .section-detail .content1 .location {
   display: flex;
-  align-items: center;
-  align-content: center;
 }
-.section-detail .content1 .location p {
+.section-detail .content1 p {
   margin-right: 40px;
 }
-.section-detail .content1 .gallery {
+.section-detail .gallery {
   width: 100%;
   margin: 0 auto;
 }
-.section-detail .content1 ​ .gallery__main {
-  width: 45rem;
-  height: 30rem;
-  margin: 0 auto;
+.section-detail .gallery img {
+  width: 790px;
+  height: 548px;
+  border-radius: 10px;
 }
-.section-detail .content1 ​ .gallery__main img {
+.section-detail ​ .gallery__main img {
   width: 790px;
   height: 548px;
   -o-object-fit: cover;
@@ -596,32 +594,96 @@ header nav ul li a.active {
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-.section-detail .content1 ​ .gallery__previews {
+.section-detail ​ .gallery .gallery__previews {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 2rem;
 }
-.section-detail .content1 ​ .gallery__previews img {
-  width: 9rem;
-  height: 7rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 4px;
+.section-detail .gallery .gallery__previews img {
+  width: 140px;
+  height: 140px;
   margin: 0.5rem;
   cursor: pointer;
 }
-.section-detail .content1 .button {
-  display: flex;
+.section-detail ​ .gallery__previews img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
 }
-.section-detail .content1 button {
-  width: 135px;
-  height: 33px;
+.section-detail .button {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+.section-detail button {
+  width: 180px;
+  height: 32px;
   background-color: #34A753;
   color: white;
   border: none;
   border-radius: 5px;
   margin-right: 70px;
+  box-sizing: border-box;
+}
+.section-detail #collapseExample .card {
+  border: none;
+  padding: 0;
+}
+.section-detail #collapseExample .card p {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #5b5b5b;
+}
+.section-detail #collapseExample2 {
+  display: none;
+}
+.section-detail #collapseExample2 .card {
+  width: 791px;
+  border: none;
+  padding: 0;
+}
+.section-detail #collapseExample2 .card p {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #5b5b5b;
+}
+.section-detail #collapseExample2 .card .acomodation span,
+.section-detail #collapseExample2 .card .destination span {
+  width: 125px;
+  height: 22px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: #34A753;
+}
+.section-detail #collapseExample2 .card .acomodation span i,
+.section-detail #collapseExample2 .card .destination span i {
+  width: 22px;
+  font-size: 22px;
+  color: #34A753;
+  margin-right: 25px;
+  box-sizing: border-box;
+}
+.section-detail #collapseExample2 .card .acomodation li,
+.section-detail #collapseExample2 .card .destination li {
+  padding-left: 15px;
+  text-align: start;
+  color: #5b5b5b;
+  margin-top: 5px;
+}
+.section-detail #collapseExample2 .card .acomodation p,
+.section-detail #collapseExample2 .card .destination p {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #5b5b5b;
 }
 .section-detail .content2 {
   margin-top: 123px;
@@ -629,8 +691,13 @@ header nav ul li a.active {
   height: 380px;
   box-shadow: 0px 4px 41px -15px black;
   border-radius: 10px;
-  padding: 25px;
+  padding: 25px 30px;
   order: 2;
+  box-sizing: border-box;
+}
+.section-detail .content2 * {
+  margin: 0;
+  padding: 0;
 }
 .section-detail .content2 .rating {
   display: flex;
@@ -638,10 +705,33 @@ header nav ul li a.active {
 }
 .section-detail .content2 .rating p {
   font-weight: 600;
-  line-height: 0;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.section-detail .content2 p {
+  margin-bottom: 17px;
 }
 .section-detail .content2 h6 {
   line-height: 0;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+}
+.section-detail .content2 h3 {
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+.section-detail .content2 button {
+  width: 100%;
+  height: 32px;
+  background-color: #34A753;
+  color: white;
+  border: none;
+  margin: 20px 70px 37px 0;
+}
+.section-detail .content2 hr {
+  margin-bottom: 15px;
 }
 
 /* footer */
@@ -654,6 +744,7 @@ footer {
   padding-bottom: 73px;
   padding-left: 100px;
   padding-top: 200px;
+  box-sizing: border-box;
 }
 footer p {
   color: white;
@@ -760,6 +851,44 @@ footer .container-footer .content2 .content-right ul li {
   .section-most-popular .content2 {
     display: grid;
     grid-template-columns: 290px 290px;
+  }
+  .section-detail .container {
+    padding: 0;
+    margin: 0;
+  }
+  .section-detail body {
+    margin: 0;
+    padding: 0;
+  }
+  .section-detail .content {
+    display: block;
+  }
+  .section-detail .content .content1 {
+    width: 100%;
+    text-align: center;
+  }
+  .section-detail .content .content1 .location {
+    width: 100%;
+    justify-content: center;
+  }
+  .section-detail .content .content1 .gallery {
+    width: 100%;
+  }
+  .section-detail .content .content1 button {
+    margin: 0;
+  }
+  .section-detail .content .content1 .button {
+    text-align: center;
+    justify-content: center;
+    gap: 0px 50px;
+    box-sizing: border-box;
+  }
+  .section-detail .content .content1 .collapse {
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  .section-detail .content .content1 .collapse .card-body {
+    width: 100%;
   }
 }
 @media screen and (max-width: 1210px) {
