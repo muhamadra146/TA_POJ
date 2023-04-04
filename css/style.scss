@@ -888,10 +888,11 @@ body {
   .section-most-popular {
     .content2 {
       display: grid;
-    grid-template-columns: 290px 290px;
+      grid-template-columns: 290px 290px;
     }
   }
   .section-detail {
+    margin-top: 80px;
     .container {
       padding: 0;
       margin: 0;
@@ -904,19 +905,24 @@ body {
       display: block;
       .content1 {
         width: 100%;
-        text-align: center;
+        h3 {
+          width: 100%;
+          text-align: center;
+          flex-wrap: wrap;
+        }
         .location {
           width: 100%;
           justify-content: center;
+          flex-wrap: wrap;
         }
         .gallery {
           width: 100%;
+          text-align: center;
         }
         button {
           margin: 0;
         }
         .button {
-          text-align: center;
           justify-content: center;
           gap: 0px 50px;
           box-sizing: border-box;
@@ -928,7 +934,56 @@ body {
             width: 100%;
           }
         }
+        #collapseExample2 {
+          display: none;
+            .card {
+                width: 100%;
+                border: none;
+                padding: 0;
+                p {
+                    text-align: justify;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    color: #5b5b5b;
+                }
+                .acomodation,
+                .destination {
+                    span {
+                        width: 125px;
+                        height: 22px;
+                        text-align: center;
+                        font-size: 22px;
+                        font-weight: 600;
+                        color: #34A753;
+                        i {
+                            width: 22px;
+                            font-size: 22px;
+                            color: #34A753;
+                            margin-right: 25px;
+                            box-sizing: border-box;
+                        }
+                    }
+                    li {
+                        padding-left: 15px;
+                        text-align: start;
+                        color: #5b5b5b;
+                        margin-top: 5px;
+                    }
+                    p {
+                        text-align: justify;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        color: #5b5b5b;
+                    }
+                }
+            }
+        }
       }
+    }
+    .content2{
+      margin: auto;
     }
   }
 }
@@ -1106,6 +1161,21 @@ body {
     input {
       width: 100%;
     }
+  }
+  .section-detail {
+    .gallery {
+      padding: 0 50px;
+      box-sizing: border-box;
+      .gallery__main img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+  .section-your-help {
+    padding: 0 50px;
+    box-sizing: border-box;
   }
 }
 

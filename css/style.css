@@ -109,7 +109,7 @@ header nav ul li a.active {
 .menu-toggle {
   color: rgb(94, 94, 94);
   float: right;
-  line-height: 90px;
+  line-height: 50px;
   font-size: 24px;
   cursor: pointer;
   display: none;
@@ -852,6 +852,9 @@ footer .container-footer .content2 .content-right ul li {
     display: grid;
     grid-template-columns: 290px 290px;
   }
+  .section-detail {
+    margin-top: 80px;
+  }
   .section-detail .container {
     padding: 0;
     margin: 0;
@@ -865,20 +868,25 @@ footer .container-footer .content2 .content-right ul li {
   }
   .section-detail .content .content1 {
     width: 100%;
+  }
+  .section-detail .content .content1 h3 {
+    width: 100%;
     text-align: center;
+    flex-wrap: wrap;
   }
   .section-detail .content .content1 .location {
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
   }
   .section-detail .content .content1 .gallery {
     width: 100%;
+    text-align: center;
   }
   .section-detail .content .content1 button {
     margin: 0;
   }
   .section-detail .content .content1 .button {
-    text-align: center;
     justify-content: center;
     gap: 0px 50px;
     box-sizing: border-box;
@@ -889,6 +897,56 @@ footer .container-footer .content2 .content-right ul li {
   }
   .section-detail .content .content1 .collapse .card-body {
     width: 100%;
+  }
+  .section-detail .content .content1 #collapseExample2 {
+    display: none;
+  }
+  .section-detail .content .content1 #collapseExample2 .card {
+    width: 100%;
+    border: none;
+    padding: 0;
+  }
+  .section-detail .content .content1 #collapseExample2 .card p {
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #5b5b5b;
+  }
+  .section-detail .content .content1 #collapseExample2 .card .acomodation span,
+  .section-detail .content .content1 #collapseExample2 .card .destination span {
+    width: 125px;
+    height: 22px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #34A753;
+  }
+  .section-detail .content .content1 #collapseExample2 .card .acomodation span i,
+  .section-detail .content .content1 #collapseExample2 .card .destination span i {
+    width: 22px;
+    font-size: 22px;
+    color: #34A753;
+    margin-right: 25px;
+    box-sizing: border-box;
+  }
+  .section-detail .content .content1 #collapseExample2 .card .acomodation li,
+  .section-detail .content .content1 #collapseExample2 .card .destination li {
+    padding-left: 15px;
+    text-align: start;
+    color: #5b5b5b;
+    margin-top: 5px;
+  }
+  .section-detail .content .content1 #collapseExample2 .card .acomodation p,
+  .section-detail .content .content1 #collapseExample2 .card .destination p {
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #5b5b5b;
+  }
+  .section-detail .content2 {
+    margin: auto;
   }
 }
 @media screen and (max-width: 1210px) {
@@ -1049,6 +1107,20 @@ footer .container-footer .content2 .content-right ul li {
   }
   .section-your-help input {
     width: 100%;
+  }
+  .section-detail .gallery {
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+  .section-detail .gallery .gallery__main img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .section-your-help {
+    padding: 0 50px;
+    box-sizing: border-box;
   }
 }
 @media screen and (max-width: 768px) {
