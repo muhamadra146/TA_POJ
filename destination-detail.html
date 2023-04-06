@@ -8,6 +8,7 @@
     <title>Destination-Detail</title>
     <!-- link css -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,7 +95,7 @@
                 </div>
                 <div class="content2">
                     <div class="card">
-                        <div>
+                        <div class="rating">
                             <p>Destination overview</p>
                         </div>
                         <div class="rating">
@@ -106,7 +107,7 @@
                                 <p><img src="gambar/destination-detail/bintang.png" alt="">4.5</p>
                             </div>
                         </div>
-                        <div>
+                        <div class="rating">
                             <p>Rp. 1.000.000 / Pax</p>
                         </div>
                         <div>
@@ -157,26 +158,30 @@
     </div>
 
     <div class="section-your-help">
-        <div class="your-help">
-            <h2>Need our help?</h2>
-            <p>Contact us freely to get any information you need</p>
-        </div>
-        <div class="content1">
-            <div class="content-left">
-                <div><label for="username">First name</label></div>
+        <div class="wrap">
+            <div class="your-help">
+                <h2>Need our help?</h2>
+                <p>Contact us freely to get any information you need</p>
+            </div>
+            <div class="content1">
+                <div class="content-left">
+                    <div><label for="username">First name</label></div>
+                    <div> <input type="text"></div>
+                </div>
+                <div class="content-right">
+                    <div><label for="Company-name">Last name</label></div>
+                    <div> <input type="text"></div>
+                </div>
+            </div>
+            <div class="content-bottom">
+                <div><label for="Company-address">Email</label></div>
+                <div> <input type="text"></div>
+                <div><label for="PIC number">Phone number</label></div>
+                <div> <input type="text"></div>
+                <div><label for="Request service">Message</label></div>
                 <div> <input type="text"></div>
             </div>
-            <div class="content-right">
-                <div><label for="Company-name">Last name</label></div>
-                <div> <input type="text"></div>
-            </div>
         </div>
-        <div><label for="Company-address">Email</label></div>
-        <div> <input type="text"></div>
-        <div><label for="PIC number">Phone number</label></div>
-        <div> <input type="text"></div>
-        <div><label for="Request service">Message</label></div>
-        <div> <input type="text"></div>
     </div>
 
 

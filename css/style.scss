@@ -293,6 +293,9 @@ body {
   .your-help {
     text-align: center;
     margin-bottom: 85px;
+    p {
+      color: #FD7B38;
+    }
   }
   .content1 {
     gap: 0px 30px;
@@ -720,6 +723,7 @@ body {
       .rating {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 20px;
       }
     }
     h5 {
@@ -979,7 +983,9 @@ body {
       }
     }
     .content2{
-      margin: auto;
+      .card {
+        margin: auto;
+      }
     }
   }
 }

@@ -286,6 +286,9 @@ header nav ul li a.active {
   text-align: center;
   margin-bottom: 85px;
 }
+.section-your-help .your-help p {
+  color: #FD7B38;
+}
 .section-your-help .content1 {
   gap: 0px 30px;
   display: flex;
@@ -705,6 +708,7 @@ header nav ul li a.active {
 .section-detail .content2 .card .rating {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .section-detail .content2 h5 {
   font-weight: 700;
@@ -939,7 +943,7 @@ footer .container-footer .content2 .content-right ul li {
     line-height: 30px;
     color: #5b5b5b;
   }
-  .section-detail .content2 {
+  .section-detail .content2 .card {
     margin: auto;
   }
 }
