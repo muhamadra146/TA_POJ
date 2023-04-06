@@ -8,12 +8,12 @@
     <title>Destination-Detail</title>
     <!-- link css -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -22,14 +22,14 @@
         <div class="logo"><img src="gambar/Dark logo.png" alt=""></div>
         <nav>
             <ul>
-                <li><a href="#home">Discover</a></li>
-                <li><a href="#about" >Destination</a></li>
-                <li><a href="#service">Package</a></li>
-                <li><a href="#contact">About Us</a></li>
-                <div class="button-navbar"><a href="#"><button>Register</button></a></div>
+                <li><a href="3.Discovery.html">Discover</a></li>
+                <li><a href="4.destination.html" >Destination</a></li>
+                <li><a href="5.package.html">Package</a></li>
+                <li><a href="6.About-us.html">About Us</a></li>
+                <div class="button-navbar"><a href="2.Register.html"><button>Register</button></a></div>
             </ul>
         </nav>
-        <div class="button-nav"><button>Register</button></div>
+        <div class="button-nav"><a href="2.Register.html"><button>Register</button></a></div>
         <div class="menu-toggle">
             <i class="fa fa-bars"></i>
         </div>
@@ -94,17 +94,31 @@
                     </div>
                 </div>
                 <div class="content2">
-                    <p>Destination overview</p>
-                    <div class="rating">
-                        <p>Nusa Penida, Bali</p>
-                        <p><img src="gambar/destination-detail/bintang.png" alt="">4.5</p>
+                    <div class="card">
+                        <div class="rating">
+                            <p>Destination overview</p>
+                        </div>
+                        <div class="rating">
+                            <div class="content-left">
+                                <h5>Nusa Penida, Bali</h5>
+                                <h6>60 reviews</h6>
+                            </div>
+                            <div class="content-right">
+                                <p><img src="gambar/destination-detail/bintang.png" alt="">4.5</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <p>Rp. 1.000.000 / Pax</p>
+                        </div>
+                        <div>
+                            <div><button>Book Now</button></div>
+                            <hr>
+                        </div>
+                        <div>
+                            <p>Specials offer for new traveler 15 % off.    
+                            <br> Valid until 5 August 2023</p>
+                        </div>
                     </div>
-                    <h6>60 reviews</h6>
-                    <p>Rp. 1.000.000 / Pax</p>
-                    <div><button>Book Now</button></div>
-                    <hr>
-                    <p>Specials offer for new traveler 15 % off.    
-                        <br> Valid until 5 August 2023</p>
                 </div>
             </div>
         </div>
@@ -144,26 +158,32 @@
     </div>
 
     <div class="section-your-help">
-        <div class="your-help">
-            <h2>Need our help?</h2>
-            <p>Contact us freely to get any information you need</p>
-        </div>
-        <div class="content1">
-            <div class="content-left">
-                <div><label for="username">First name</label></div>
-                <div> <input type="text"></div>
+        <form action="">
+            <div class="wrap">
+                <div class="your-help">
+                    <h2>Need our help?</h2>
+                    <p>Contact us freely to get any information you need</p>
+                </div>
+                <div class="content1">
+                    <div class="content-left">
+                        <div><label for="username">First name</label></div>
+                        <div> <input type="text"></div>
+                    </div>
+                    <div class="content-right">
+                        <div><label for="Company-name">Last name</label></div>
+                        <div> <input type="text"></div>
+                    </div>
+                </div>
+                <div class="content-bottom">
+                    <div><label for="Company-address">Email</label></div>
+                    <div> <input type="text"></div>
+                    <div><label for="PIC number">Phone number</label></div>
+                    <div> <input type="text"></div>
+                    <div><label for="Request service">Message</label></div>
+                    <div> <input type="text"></div>
+                </div>
             </div>
-            <div class="content-right">
-                <div><label for="Company-name">Last name</label></div>
-                <div> <input type="text"></div>
-            </div>
-        </div>
-        <div><label for="Company-address">Email</label></div>
-        <div> <input type="text"></div>
-        <div><label for="PIC number">Phone number</label></div>
-        <div> <input type="text"></div>
-        <div><label for="Request service">Message</label></div>
-        <div> <input type="text"></div>
+        </form>
     </div>
 
 
@@ -236,9 +256,6 @@
             text1.style.display = "none"
         }
     </script>
-
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-
 </body>
 
 </html>
