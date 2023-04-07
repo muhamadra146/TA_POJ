@@ -339,13 +339,18 @@ body {
       margin-right: 70px;
     }
   }
+  .scroll {
+    overflow-x: scroll;
+    margin-right: 50px;
+    box-sizing: border-box;
+    justify-content: start !important;
+  }
   .content2 {
     display: flex;
     justify-content: center;
     gap: 20px 30px;
-    flex-wrap: wrap;
     margin-bottom:100px;
-    img {
+    img { 
       width: 290px;
     }
     .gambar {
@@ -887,8 +892,7 @@ body {
 @media screen and (max-width:1320px) {
   .section-most-popular {
     .content2 {
-      display: grid;
-      grid-template-columns: 290px 290px;
+      display: flex;
     }
   }
   .section-detail {
@@ -1035,8 +1039,11 @@ body {
         margin: 0;
       }
     }
+    .scroll {
+    margin-left: 50px;
+    box-sizing: border-box;
+    }
     .content2 {
-      padding: 50px;
       box-sizing: border-box;
     }
   }
