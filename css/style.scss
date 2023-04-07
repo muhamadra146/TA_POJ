@@ -341,6 +341,7 @@ body {
   }
   .scroll {
     overflow-x: scroll;
+    flex-wrap: nowrap !important;
     margin-right: 50px;
     box-sizing: border-box;
     justify-content: start !important;
@@ -348,6 +349,7 @@ body {
   .content2 {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px 30px;
     margin-bottom:100px;
     img { 
