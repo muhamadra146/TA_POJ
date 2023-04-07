@@ -327,11 +327,16 @@ header nav ul li a.active {
   border-radius: 5px;
   margin-right: 70px;
 }
+.section-most-popular .scroll {
+  overflow-x: scroll;
+  margin-right: 50px;
+  box-sizing: border-box;
+  justify-content: start !important;
+}
 .section-most-popular .content2 {
   display: flex;
   justify-content: center;
   gap: 20px 30px;
-  flex-wrap: wrap;
   margin-bottom: 100px;
 }
 .section-most-popular .content2 img {
@@ -847,8 +852,7 @@ footer .container-footer .content2 .content-right ul li {
 }
 @media screen and (max-width: 1320px) {
   .section-most-popular .content2 {
-    display: grid;
-    grid-template-columns: 290px 290px;
+    display: flex;
   }
   .section-detail {
     margin-top: 80px;
@@ -987,8 +991,11 @@ footer .container-footer .content2 .content-right ul li {
   .section-most-popular .content-right button {
     margin: 0;
   }
+  .section-most-popular .scroll {
+    margin-left: 50px;
+    box-sizing: border-box;
+  }
   .section-most-popular .content2 {
-    padding: 50px;
     box-sizing: border-box;
   }
   .section-best-early {
