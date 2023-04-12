@@ -783,6 +783,109 @@ footer .container-footer .content2 .content-right ul li {
   margin-left: 30px;
 }
 
+.header-checkout {
+  margin-top: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.header-checkout .content1 {
+  text-align: center;
+  margin-bottom: 60px;
+  box-sizing: border-box;
+}
+.header-checkout .content2 {
+  text-align: center;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+
+.checkout-detail {
+  margin-top: 60px;
+}
+.checkout-detail .content1 {
+  display: flex;
+  justify-content: space-between;
+}
+.checkout-detail .content1 p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.checkout-detail .content1 button {
+  border: none;
+  color: #34A753;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.travel-order {
+  margin-top: 22px;
+}
+.travel-order .content1 {
+  background-color: white;
+  box-shadow: 0px 4px 30px -15px black;
+  border-radius: 10px;
+}
+.travel-order .content1 .content {
+  padding: 25px 0 0 25px;
+  box-sizing: border-box;
+}
+.travel-order .content1 .content-bootom {
+  padding: 0 25px 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.travel-order .content1 .content-bootom img {
+  width: 55px;
+  height: 55px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+.travel-order .content1 .content-bootom .coll {
+  display: flex;
+}
+.travel-order .content1 .content-bootom .coll input {
+  margin-left: 15px;
+  box-sizing: border-box;
+}
+.travel-order .content1 .content-bootom .coll .tickets {
+  width: 50px;
+  height: 36px;
+}
+.travel-order .content1 .content-bootom .coll .date {
+  width: 200px;
+  height: 36px;
+}
+
+.billing-detail {
+  margin-top: 40px;
+}
+.billing-detail .cardd {
+  background-color: white;
+  box-shadow: 0px 4px 30px -15px black;
+  border-radius: 10px;
+  color: black;
+}
+.billing-detail .cardd label {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 25px;
+}
+.billing-detail .cardd .bill {
+  padding: 25px 25px 0 25px;
+}
+
+.footer-checkout {
+  margin-top: 60px;
+}
+.footer-checkout p {
+  font-weight: 400;
+}
+
 /* responsive */
 @media (max-width: 1140px) {
   header {
